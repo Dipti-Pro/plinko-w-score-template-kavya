@@ -41,8 +41,10 @@ function setup() {
  
 function draw() {
   background("black");
+
   textSize(35)
   text("Score : "+score,20,40);
+
   fill("white");
   //text(mouseX + "," + mouseY, 20, 50);
   textSize(35)
@@ -117,9 +119,5 @@ function draw() {
 
 function mousePressed()
 {
-  if(gameState!=="end")
-  {
-      count++;
-     ball=new Ball(mouseX, 10, 10, 10); 
-  }   
+    
 }
